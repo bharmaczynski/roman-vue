@@ -1,5 +1,5 @@
 # spacer-helloroman
-This is videocourseee
+This is videocourse
 
 ## Project setup
 ```

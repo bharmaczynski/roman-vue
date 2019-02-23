@@ -60,6 +60,7 @@
 	}
 
 	.innerWrapper {
+		position: relative;
 		display: flex;
 		height: 100%;
 		padding: 50px;
@@ -68,7 +69,6 @@
 		flex-direction: column;
 		.photo {
 			width: 100%;
-			height: auto;
 			background: #000;
 			img {
 				width: 100%;
@@ -81,10 +81,19 @@
 
 		@media (min-width: 1024px) {
 			flex-direction: row;
+			justify-content: flex-start;
 
 			.photo {
-				min-width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
 				margin-right: 20px;
+				height: 100%;
+				overflow: hidden;
+				img {
+					height: auto;
+				}
 			}
 		}
 	}
